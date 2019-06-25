@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { withRouter } from "react-router-dom";
 import Routes from "./Routes";
 import "./App.css";
+import { BrowserRouter as Router } from "react-router-dom";
 
 class App extends Component {
 
@@ -11,10 +12,12 @@ class App extends Component {
 
     return (
       <div className="App container">
-        <Routes childProps={childProps} />
+      <Router basename={process.env.PUBLIC_URL}>
+      <Routes childProps={childProps} />      
+      </Router>
       </div>
     );
   }
 }
 
-export default withRouter(App);
+export default App;
