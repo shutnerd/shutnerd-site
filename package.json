@@ -23,5 +23,5 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "homepage" : "https://shutnerd.github.io/shutnerd-site/"
+  "homepage" : "https://api.shutnerd.com"
 }
