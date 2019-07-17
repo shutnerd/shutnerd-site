@@ -12,9 +12,9 @@ class App extends Component {
 
     return (
       <div className="App container">
-      <Router basename={process.env.PUBLIC_URL}>
-      <Routes childProps={childProps} />      
-      </Router>
+        <Router basename={process.env.PUBLIC_URL}>
+          <Routes childProps={childProps} />      
+        </Router>
       </div>
     );
   }

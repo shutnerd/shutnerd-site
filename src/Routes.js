@@ -6,7 +6,6 @@ export default ({ childProps }) => {
   return <Switch>
     <Route path="/:name" exact component={Home} props={childProps} />
     <Route path='/' exact component={Home} props = {childProps} />
-    {/* <AuthenticatedRoute path="/settings" exact component={Settings} props={childProps} /> */}
     { /* Finally, catch all unmatched routes */ }
     <Route component={Home} />
   </Switch>;
